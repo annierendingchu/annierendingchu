@@ -1,0 +1,67 @@
+body{
+    background-image: url("fainting_Tomato.gif");
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.grid {
+    float: left;
+    width: 18.5vw;
+    height: 90vh;
+}
+
+.sticky {
+    position:fixed;
+}
+
+.smallsqu {
+    float:left;
+    width: 4.6vw;
+    height: 4.6vw;
+}
+
+.grid2 {
+    float: left;
+    width: 25vw;
+    height: 90vh;
+}
+
+
+.smallsqu2 {
+    float:left;
+    width: 4.1vw;
+    height: 4.1vw;
+}
+
+.topgrid {
+    width: 100vw;
+    height: 4vw;
+    top:0;
+    position:fixed;
+}
+
+.botgrid {
+    bottom:0;
+    position:fixed;
+}
+
+.topsqu {
+    float:left;
+    width: calc(100vw / 24.5);
+    height: calc(100vw / 24.5);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
