@@ -1,7 +1,8 @@
 body{
-    background-image: url("fainting_Tomato.gif");
-    background-repeat: no-repeat;
+    background-image: url("tomato_gifs/bling.gif");
+    background-repeat: repeat-y;
     background-color: black;
+    background-size: contain;
 }
 
 .grid {
@@ -13,6 +14,7 @@ body{
 .sticky {
     position:fixed;
 }
+
 
 .smallsqu {
     float:left;
@@ -29,8 +31,14 @@ body{
 
 .smallsqu2 {
     float:left;
-    width: 4.1vw;
-    height: 4.1vw;
+    width: 4.15vw;
+    height: 4.15vw;
+}
+
+.bigsqu {
+    float:left;
+    width: 25vw;
+    height: 20vw;
 }
 
 .topgrid {
@@ -40,6 +48,64 @@ body{
     position:fixed;
 }
 
+
+.topgifs {
+    width: 100vw;
+    height: 90vh;
+    float:left;
+    position:fixed;
+}
+
+.stickygifs {
+    float:left;
+    width:15vw;
+}
+
+#sticky1 {
+    transform: translate(10px,10vh);
+    opacity: 0;
+}
+#sticky1:hover{
+    opacity: 1;
+}
+
+#sticky2{
+    transform: translate(40vh,30vh);
+    opacity: 0;
+}
+
+#sticky2:hover{
+    opacity: 1;
+}
+
+#sticky3 {
+    transform: translate(8vh,70vh);
+    opacity: 0;
+}
+#sticky3:hover{
+    opacity: 1;
+}
+#sticky4 {
+    transform: translate(50vh,30vh);
+    opacity: 0;
+}
+#sticky4:hover{
+    opacity: 1;
+}
+#sticky5 {
+    transform: translate(35vh,70vh);
+    opacity: 0;
+}
+#sticky5:hover{
+    opacity: 1;
+}
+#sticky6 {
+    transform: translate(-60vh,10vh)scale(0.4);
+    opacity: 0;
+}
+#sticky6:hover{
+    opacity: 1;
+}
 .botgrid {
     bottom:0;
     position:fixed;
