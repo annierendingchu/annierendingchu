@@ -58,7 +58,7 @@ body{
 
 .stickygifs {
     float:left;
-    width:15vw;
+    width:20vw;
 }
 
 #sticky1 {
@@ -70,7 +70,7 @@ body{
 }
 
 #sticky2{
-    transform: translate(40vh,30vh);
+    transform: translate(0vh,30vh);
     opacity: 0;
 }
 
@@ -79,28 +79,28 @@ body{
 }
 
 #sticky3 {
-    transform: translate(8vh,70vh);
+    transform: translate(0,70vh);
     opacity: 0;
 }
 #sticky3:hover{
     opacity: 1;
 }
 #sticky4 {
-    transform: translate(50vh,30vh);
+    transform: translate(30vh,30vh);
     opacity: 0;
 }
 #sticky4:hover{
     opacity: 1;
 }
 #sticky5 {
-    transform: translate(35vh,70vh);
+    transform: translate(1vh,70vh);
     opacity: 0;
 }
 #sticky5:hover{
     opacity: 1;
 }
 #sticky6 {
-    transform: translate(-60vh,10vh)scale(0.4);
+    transform: translate(72vh,-30vh)scale(0.4);
     opacity: 0;
 }
 #sticky6:hover{
