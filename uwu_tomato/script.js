@@ -19,6 +19,28 @@ $(document).ready(function(){
         alert("To free you.");
     });
 
+    $("#poppy").click(function(){
+        alert("Poppy wants to play with you. Poppy's hair is red like your body.");
+    });
+
+    $("#knife").click(function(){
+        alert("I swear it's not ketchup, don't worry!");
+    });
+
+    $("#axe").click(function(){
+        alert("An old tool for chopping firewoods.");
+    });
+
+    $("#blender").click(function(){
+        alert("Blend your worries away. Quick and nutritious.");
+    });
+
+    
+    $("#wine").click(function(){
+        alert("A glass of Chateau Lafite Rothschild 2002, for our most esteemed guest.");
+    });
+
+
     $("#feel").click(function(){
         alert("Don't worry. Life is but a dream...");
     });

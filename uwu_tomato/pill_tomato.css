@@ -68,3 +68,97 @@ body {
     z-index: 1001;
     width:100%;
 }
+
+.toppics {
+    width: 100vw;
+    height: 90vh;
+    float:left;
+}
+
+.stickypics {
+    float:left;
+    width:20vw;
+}
+
+#axe {
+    transform: translate(-10vh,10vh) scale(0.5);
+    opacity: 0;
+}
+
+#axe:hover {
+    opacity: 1;
+}
+
+#blender {
+    transform: translate(-10vh,0) scale(0.5);
+    opacity: 0;
+}
+
+#blender:hover{
+    opacity: 1;
+}
+
+#knife {
+    transform: translate(40vh,0) scale(0.8);
+    opacity: 0;
+}
+
+#knife:hover{
+    opacity: 1;
+}
+
+#poppy {
+    transform: translate(20vh,10vh) scale(0.5);
+    opacity: 0;
+}
+
+#poppy:hover{
+    opacity: 1;
+}
+
+#speaker {
+    opacity: 1;
+    pointer-events: none;
+}
+
+
+/*@keyframes  {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0s;
+    }
+}*/
+
+#wine {
+    transform: translate(-80vw,-50vh) scale(0.3);
+    opacity: 0;
+}
+
+#wine:hover {
+    opacity: 1;
+}
+
+
+audio {
+    z-index: 1000;
+    position: fixed;
+    transform: translate(3vw,4vh);
+    right: 0;
+    top:10vh;
+    opacity: 0;
+}
