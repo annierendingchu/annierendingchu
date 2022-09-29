@@ -1,28 +1,30 @@
+*{
+    cursor:none;
+}
+
+
 .container {
     width: 100%;
 }
 
-.img {
-    display: block;
-    margin: 10% auto 0 auto;
-    width: 40%;
-    cursor: pointer;
-
-}
 
 .panic {
     display: block;
     margin: 10% auto 0 auto;
     width: 40%;
-    cursor: pointer;
+}
+
+.empty {
+    display: block;
+    margin: 10% auto 0 auto;
+    width: 40%;
 }
 
 p {
     text-align: center;
-    background-color: aliceblue;
+    background-color: rgb(249, 249, 249);
     padding: 20px;
-    cursor: pointer;
-    font-family: 'Titan One', cursive;
+    font-family: 'Titan One',cursive;
     font-size: larger;
 
 }
@@ -41,3 +43,23 @@ body {
     background-size: cover;
 }
 
+.cursor {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 800px;
+    height: 800px;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.cursor.hide {
+    opacity: 0;
+}
+
+.cursor img{
+    z-index: 1001;
+    width:100%;
+}
