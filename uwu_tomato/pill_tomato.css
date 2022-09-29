@@ -4,30 +4,26 @@
 
 
 .container {
+    position: fixed;
     width: 100%;
 }
 
 
-.panic {
-    display: block;
-    margin: 10% auto 0 auto;
+.imgmain {
+    position:relative;
     width: 40%;
+    margin: 10% auto 0 auto;
 }
 
-.empty {
-    display: block;
+.imghover{
+    position:absolute;
     margin: 10% auto 0 auto;
-    width: 40%;
-}
-
-.door {
-position: fixed;
-    width:20vw;
-    transform: translate(10px,-50vh) scale(0.75);
     opacity: 0;
+    width: 40%;
+
 }
 
-.door:hover {
+.imghover:hover{
     opacity: 1;
 }
 
@@ -49,10 +45,7 @@ p {
 
 
 body {
-    background-image: url("expressions/background2.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: black;
 }
 
 .cursor {
@@ -61,8 +54,8 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    width: 800px;
-    height: 800px;
+    width: 100px;
+    height: 100px;
     pointer-events: none;
     opacity: 1;
 }

@@ -1,0 +1,50 @@
+.container {
+    position: fixed;
+    width: 100%;
+}
+
+.freedom {
+    display: block;
+    margin: 10% auto 0 auto;
+    width: 40%;
+    cursor: pointer;
+}
+
+
+p {
+    text-align: center;
+   cursor: pointer;
+
+}
+
+#free{
+    background-color: rgb(249, 249, 249);
+    padding: 20px;
+    font-family: 'Titan One',cursive;
+    font-size: larger;
+}
+
+#back{
+    position:fixed;
+    color: red;
+    text-decoration: underline;
+    font-family: 'Titan One',cursive;
+    font-size: larger;
+    transform: translate(40vw,90vh);
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+body {
+    background-image: url("expressions/freedom.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}

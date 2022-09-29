@@ -1,0 +1,36 @@
+.container {
+    position: fixed;
+    width: 100%;
+}
+
+.empty {
+    display: block;
+    margin: 10% auto 0 auto;
+    width: 40%;
+}
+
+
+p {
+    text-align: center;
+    background-color: rgb(249, 249, 249);
+    padding: 20px;
+    font-family: 'Titan One',cursive;
+    font-size: larger;
+
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+body {
+    background-image: url("expressions/uwu_Tomato.png");
+    background-size: 220%;
+    background-position: center;
+    background-position-y: 30%;
+    background-position-x: 45%;
+    background-color: black;
+}

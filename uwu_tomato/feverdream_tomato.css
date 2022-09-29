@@ -106,6 +106,57 @@ body{
 #sticky6:hover{
     opacity: 1;
 }
+
+#sticky7 {
+    opacity: 0;
+}
+#sticky7:hover{
+    opacity: 1;
+}
+
+#sticky8 {
+    transform: translate(1vh,10vh);
+    opacity: 0;
+}
+#sticky8:hover{
+    opacity: 1;
+}
+
+#sticky9 {
+    transform: translate(1vh,-30vh);
+    opacity: 0;
+}
+#sticky9:hover{
+    opacity: 1;
+}
+
+#sticky10 {
+    transform: translate(-90vh,-40vh);
+    opacity: 0;
+}
+
+#sticky10:hover{
+    opacity: 1;
+}
+
+
+#sticky11 {
+    opacity: 0;
+}
+
+#sticky11:hover{
+    opacity: 1;
+}
+
+#sticky12 {
+    transform: translate(0,-30vh);
+    opacity: 0;
+}
+
+#sticky12:hover{
+    opacity: 1;
+}
+
 .botgrid {
     bottom:0;
     position:fixed;
