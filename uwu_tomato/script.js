@@ -77,13 +77,28 @@ $(document).ready(function(){
         });
     });
 
+var mouseposition;
+
+    $(window).width();
+    var windowwidth =  $(window).width();
+
+
+    $(document).on("mousemove",function(event){
+         mouseposition = event.pageX;
+         if (mouseposition > windowwidth*0.5) {
+            console.log('mouse is to the right');
+            $(".lefttomato").css("display","none");
+            $(".righttomato").css("display","flex");
+        } else {
+            console.log('mouse is to the left');
+            $(".righttomato").css("display","none");
+            $(".lefttomato").css("display","flex");
+        }
+    
+    })
+
 
     
 });
-    //$("#hi").click(function(){
-        //$(".img").attr('src','panic_right_Tomato.png')
-      //  $("#hi").text("Wait, what are you doing?")
-    //})
-
-    
+   
 
