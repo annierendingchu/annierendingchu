@@ -19,6 +19,8 @@ p {
 
 #free{
     background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+
     padding: 20px;
     font-family: 'Titan One',cursive;
     font-size: larger;

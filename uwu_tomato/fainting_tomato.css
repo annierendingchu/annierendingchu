@@ -30,6 +30,8 @@ p {
     font-size: larger;
     background-color: rgb(249, 249, 249);
     cursor: pointer;
+    border-radius: 10px;
+
 
 }
 #enter {
