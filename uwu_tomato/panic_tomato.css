@@ -7,6 +7,10 @@
     width: 100%;
 }
 
+a { 
+    color: black;
+}
+
 
 .panic {
     display: block;
