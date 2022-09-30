@@ -19,8 +19,13 @@
 
 p {
     text-align: center;
-    background-color: aliceblue;
-    padding: 20px;
+    background-color: rgb(238, 81, 81);  
+
+    /*background-image: url(items_png/textbox2.png);
+    background-size:110%;
+    background-position-y: -4vh;
+    background-position-x: -4vh;*/
+    padding: 50px;
     cursor: pointer;
     font-family: 'Titan One', cursive;
     font-size: larger;
