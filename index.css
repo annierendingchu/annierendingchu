@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+    margin: 10% auto 0 auto;
+    cursor: pointer;
+    transform: scale(3);
+    font-family: 'Space Mono', monospace;
+}
+
+h1{
+    font-family: 'Silkscreen',cursive;
+    font-size: xx-large;
+    transform: scale(5);
+    display: block;
+    margin: 10% auto 0 auto;
+    cursor: pointer;
+}
+
+a { 
+    color: black;
+}
+
+a:hover {
+    color:rgb(21, 252, 4);
+}
