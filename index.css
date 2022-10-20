@@ -6,9 +6,12 @@
     justify-content: center;
 }
 
-p {
+.center_text {
     text-align: center;
     margin: 10% auto 0 auto;
+}
+
+p {
     cursor: pointer;
     transform: scale(3);
     font-family: 'Space Mono', monospace;
