@@ -1,0 +1,81 @@
+body {
+    background-image: url("assets/Dream_bkgd.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.center_text {
+    text-align: center;
+    margin: 10% auto 0 auto;
+}
+
+h1{
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    transform: scale(2);
+    margin: 30px auto 0 auto;
+color: rgb(23, 87, 236);
+}
+
+
+.bottom {
+    z-index: 55;
+    display:flex;
+    align-items: flex-end;
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+
+.empty{
+    z-index: 55;
+    width: calc(100vw / 6);
+    height: 200px;
+    max-height: 20vh;
+    background-image: url(assets/empty.png);
+    background-size: cover;
+}
+
+.pig {
+    z-index: 55;
+    width: calc(100vw / 10);
+    height: 100px;
+    max-height: 20vh;
+    background-image: url(assets/running_pig.gif);
+    background-size: cover;
+    padding: 10px;
+    margin:30px;
+}
+.pig:hover {
+    z-index: 55;
+    width: calc(100vw / 6);
+    height: 200px;
+    max-height: 20vh;
+    background-image: url(assets/running_pig.gif);
+    background-size: cover;
+    padding: 10px;
+    margin:10px;
+}
+
+
+.character {
+    z-index: 55;
+    width: calc(100vw / 15);
+    height: 100px;
+    max-height: 20vh;
+    background-image: url(assets/character.png);
+    background-size: cover;
+    padding: 10px;
+    margin:30px;
+}
+.character:hover {
+    z-index: 55;
+    width: calc(100vw / 8);
+    height: 200px;
+    max-height: 20vh;
+    background-image: url(assets/character.png);
+    background-size: cover;
+    padding: 10px;
+    margin:10px;
+}
