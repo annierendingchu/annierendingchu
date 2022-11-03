@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>An American Dream</title>
+    <title>Make it Rain</title>
     <link href="americandream.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,22 +15,61 @@
 
 
   <div class="center">
-    <h1>An American Dream</h1>
-    <br><br><br>
-    <p class="description"> You have been working for <br> ___Years ___Days ___Hours</p>
-  <br><br><br>
-
-    <div class="progress">
-        <div class="progress__fill"></div>
-        <span class="progress__text">20min</span>
-
+    <h1>if you Saved $7.25 Every Hour</h1>
+    <div class="time">
+      <p>Starting</p>
+      <p id="startdate">Oct/17/2022</p>
     </div>
-    <div class="menu"><img src="assets/running_pig.gif"> <p class="label">Bank Account</p></div>
+    <div class="time2">
+      <p id="togo"></p>
+    </div>
+    <br>
+    
+    <p class="description"> You have been saving up for <br> 
+    <!--  <span id="year" class="position">0 </span> Years 
+      <span id="day" class="position">0 </span> Days 
+      <span id="hour" class="position">0 </span> Hours 
+      <span id="minute" class="position"></span> Minutes 
+      <span id="second" class="position"></span> Seconds -->
+    </p>
+    <p class="description" id="countdown"></p>
+    <br>
+    <div class="top">
+      <br>
+        <div class="pig">
+            <p class="label">$7,250</p>
+            <img src="assets/running_pig.gif">
+        </div>
+      <br>
+      <div class="progress">
+        <div class="progress__fill">
+          <div class="progress__text"> 
+            <!-- <span class="progress__text" id="countupminutes">00</span>:<span class="progress__text" id="countupseconds">00</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <br><br><br>
-
-    <p class="description"></p>
-
+    <div class="bottom">
+        <div class="pig2">
+            <p class="label">$7,250</p>
+            <img src="assets/running_pig.gif" > 
+        </div>
+        <div class="progress2">
+          <div class="progress__fill2">
+            <div class="progress__text2">$2000</div>
+            <div class="progress__fill2_2"></div>
+          </div>
+          <div class="progress__fill3">
+            <div class="progress__text2">$50,000</div>
+            <div class="progress__fill3_2"></div>
+          </div>
+          <div class="progress__fill4">
+            <div class="progress__text2">$350,000</div>
+            <div class="progress__fill4_2"></div>
+          </div>
+        </div>
+    </div>
   </div>
 
   </body>
