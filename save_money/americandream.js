@@ -1,6 +1,24 @@
 $(document).ready(function(){
 
-//overall message to user
+
+//date picker
+    $(function() {
+        $( "#startdate" ).datepicker({
+        dateFormat: 'dd/mm/yy', 
+        defaultDate:"17-10-2022",
+        });
+    });
+
+    $('#startdate input').change(function(){
+          var dt = new Date( $(this).val());
+          var year = dt.getFullYear();
+          var month =  (dt.getMonth() < 10 ? '0' : '') + (dt.getMonth()+1);
+          var day = (dt.getDate() < 10 ? '0' : '') + dt.getDate();
+        
+        })
+        
+
+//overall message to user, title effects, hover window for progress
     $("#titlehover").click(function(){
         alert("Dear User, \n\nI'm so glad you asked why! \n\n$7.25 is the U.S. federal minimum wage. \n\nStarting Oct/17/2022 (the date of creation of this website), you are automatically enrolled in this program where you no longer need to worry about sleep and living costs. Just save up all your earnings and work towards your dream life! \n\n(Surely without spending any of your savings it must be easy to save up and become rich?)\n\nSincerely,\nThe Dream Team");
     });
@@ -14,8 +32,27 @@ $(document).ready(function(){
     $("#titlehover").mouseleave(function(){
         $("#titlehover").css('color','rgb(23, 87, 236)');
         $("#titlehover").css('font-size','4vw');
+    });
+
+
+    $("#bank").mouseenter(function(){
+        $("#bank").css('color','red');
+        $("#bank").css('font-size','4.1vw');
 
     });
+ 
+    $("#bank").mouseleave(function(){
+        $("#bank").css('color','rgb(23, 87, 236)');
+        $("#bank").css('font-size','2vw');
+    });
+
+
+    $("#bank").click(function(){
+        $(".top").css("opacity","1");
+        $(".top").toggle();
+      });
+
+      
 
 //bottom progress bar
 
@@ -56,6 +93,8 @@ setInterval(function(){
         var paycheck = Math.round(totalhoursworked * 7.25);
   
         $(".label").html('$' + paycheck);
+        $("#bank").html('$' + paycheck);
+
         if (paycheck >=25000){
             $("body").css('background-image','url("assets/cat.gif")');
         }
@@ -202,6 +241,9 @@ setInterval(function(){
     }, 1000);
 
 
+
+});
+
     //hourly countdown
 
     
@@ -276,4 +318,3 @@ setInterval(function(){
 
    // return this;
     //};
-});

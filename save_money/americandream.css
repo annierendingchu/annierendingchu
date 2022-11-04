@@ -7,6 +7,36 @@ body {
     background-position: center;
 }
 
+h1{
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    font-size:4vw;
+    margin: 0 auto 0 auto;
+    color: rgb(23, 87, 236);
+}
+
+#titlehover {
+    cursor: help;
+    
+}
+
+#since{
+    font-size:2vw;
+    color: rgb(23, 87, 236);
+    font-weight: 700;
+
+
+}
+
+#bank {
+    cursor: pointer;
+}
+
+#youwould{
+    font-size:2vw;
+    color: rgb(23, 87, 236);
+    font-weight: 700;
+}
 
 p{
     font-family: 'Silkscreen', cursive;
@@ -33,13 +63,13 @@ margin-right: auto;
 padding: 3vw;
     background-color: rgba(0, 0, 0, 0.5);
     width: 80vw;
-    opacity: 0;
+display: none;
     margin:5vw;
 height:30vh;
 }
-.top:hover {
+/*.top:hover {
     opacity: 1;
-}
+}*/
 
 .label {
     text-align: center;
@@ -105,31 +135,6 @@ position:fixed;
 }
 
 
-
-h1{
-    font-family: 'Silkscreen', cursive;
-    text-align: center;
-    font-size:4vw;
-    margin: 0 auto 0 auto;
-    color: rgb(23, 87, 236);
-    cursor: help;
-}
-
-#titlehover.hover {
-    color: red;
-    font-size:4.5vw;
-}
-
-/*#titlehover {
-    font-family: 'Silkscreen', cursive;
-    text-align: center;
-    font-size:4vw;
-    margin: 0 auto 0 auto;
-    color: rgb(23, 87, 236);
-    margin:-5vw;
-    opacity: 1;
-}*/
-
 .description {
     text-align: center;
     font-family: 'Silkscreen', cursive;
@@ -137,6 +142,7 @@ h1{
     transform: scale(2);
     width: 100%;
     margin-bottom: 10px;
+    color: white;
 }
 
 
