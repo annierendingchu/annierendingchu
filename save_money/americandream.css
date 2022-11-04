@@ -35,14 +35,75 @@ padding: 3vw;
     width: 80vw;
     opacity: 0;
     margin:5vw;
+height:30vh;
+}
+.top:hover {
+    opacity: 1;
 }
 
-.column {
-    width: 15vw;
-    height: 100vh;
-    float: left;
-    overflow-y: scroll;
+.label {
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    /*font-size:2vw;*/
+    transform: scaleX(-1);
+    margin: 0;
+position:fixed;
+opacity: 0;
+    }
+
+.pig:hover .label {
+    opacity: 1;
 }
+
+
+.pig {
+    /* adjust width to move pig along the progress bar*/
+    width: 1%;
+    z-index: 55;
+    transform: scaleX(-150%) scaley(150%)translateY(4vh);
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+
+   /* margin-left: auto;
+    margin-right: auto;
+        max-width: 50vw;
+*/
+}
+
+.pig.hide{
+    opacity: 0;
+}
+
+.moneypig {
+    width: 1%;
+    z-index: 55;
+    transform: scaleX(-270%) scaleY(270%);
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.moneypig.show{
+    opacity:1;
+}
+
+.addition {
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    transform: scaleX(-1);
+    margin: 0;
+    margin-top:-4vw;
+position:fixed;
+}
+
 
 
 h1{
@@ -51,8 +112,19 @@ h1{
     font-size:4vw;
     margin: 0 auto 0 auto;
     color: rgb(23, 87, 236);
+    cursor: help;
 
 }
+
+/*#titlehover {
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    font-size:4vw;
+    margin: 0 auto 0 auto;
+    color: rgb(23, 87, 236);
+    margin:-5vw;
+    opacity: 1;
+}*/
 
 .description {
     text-align: center;
@@ -63,6 +135,7 @@ h1{
     margin-bottom: 10px;
 }
 
+
 .time{
 font-size:1.5vw;
 color:rgb(23, 87, 236);
@@ -72,6 +145,7 @@ flex-direction: column;
 align-items: center;
 width: 20vw;
 float: left;
+padding:10px;
 }
 
 .time2{
@@ -83,6 +157,7 @@ float: left;
     align-items: center;
     width: 20vw;
     float: right;
+    padding:10px;
     }
     
 #togo {
@@ -96,11 +171,11 @@ float: left;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(122, 122, 122);
+    transform: translateY(18vh);
 }
 
 .progress__fill{
         /* adjust width to move progress bar*/
-
     width:1%;
     height: 100%;
     background-color: rgb(254, 222, 38);
@@ -130,18 +205,47 @@ float: left;
     background-color: rgb(122, 122, 122);*/
 }
 
+
 .pig2 {
     /* adjust width to move pig along the progress bar*/
-    width: 1%;
-    height: 10vh;
+    width: 24%;
+    height: 5vh;
     z-index: 55;
-    transform: scaleX(-1);
-    height: 11vh;
+    transform: scaleX(-0.5) scaleY(0.5)translateX(-5vh);
     object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
+.pig2.hide {
+    opacity: 0;
+}
+
+.moneypig2 {
+    width: 1%;
+    z-index: 55;
+    transform: scaleX(200%) scaleY(200%) translateY(-2vh);
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    opacity: 0;
+}
+
+
+.moneypig2.show{
+    opacity:1;
+}
+
+.addition2 {
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    transform: scaleX(-1);
+    margin: 0;
+    margin-top:-4vw;
+position:fixed;
 }
 
 .progress2 {
@@ -164,6 +268,7 @@ float: left;
     border-color: rgb(122, 122, 122);
 float: left;
 }
+
 
 .progress__fill2_2{
     /* adjust width to move progress bar*/
@@ -215,65 +320,48 @@ margin-top:-5vh;
 .progress__text2{
     font-family: 'Silkscreen', cursive;
     text-align: center;
-    font-size: 3.5vh;
+    font-size: 3vh;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    justify-content: center;
+}
+
+
+.progress__text2:hover{
+    color:red;
 }
 
 
 
- /* .pigrun {
-  align-items: center;
-    justify-content: center;     
-    margin-left: auto;
-    margin-right: auto;     margin-left: 10%;
-    margin-bottom: 1%; height: 12vh;
-    object-fit: cover;
-    width: 80vw;
-   
-}*/
-
- 
-.pig {
-    /* adjust width to move pig along the progress bar*/
-    width: 1%;
-    z-index: 55;
-    transform: scaleX(-150%) scaley(150%);
-    height: 11vh;
-    object-fit: cover;
+.future1 {
     display: flex;
     align-items: center;
     justify-content: center;
-   /* margin-left: auto;
-    margin-right: auto;
-        max-width: 50vw;
-*/
+    transform: scale(7.3)translate(0vh,-5vh);
+    opacity: 0;
+    pointer-events: none;
 }
 
-
-.label {
+.futuretext {
+    font-size: 10%;
+    position:fixed;
     text-align: center;
-    font-family: 'Silkscreen', cursive;
-    /*font-size:2vw;*/
-    transform: scaleX(-1);
-    margin: 0;
-position:fixed;
-opacity: 0;
+    transform: translate(-1vh,-2vh);
 
-    }
+}
 
-    .pig:hover .label {
-        opacity: 1;
-    }
+.progress__fill2:hover.future1{
+    opacity: 1;
+}
+
+ 
+
 
     .pig2:hover .label {
         opacity: 1;
     }
 
-    .top:hover {
-        opacity: 1;
-    }
 
    

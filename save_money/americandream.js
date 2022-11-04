@@ -1,35 +1,111 @@
 $(document).ready(function(){
 
-//current time and seconds
-//    setInterval(myTimer, 1000);
-
-// function myTimer() {
-  //    const d = new Date();
-    //  document.getElementById("currenttime").innerHTML = d.toLocaleTimeString();
-    //}
+//overall message to user
+    $("h1").click(function(){
+        alert("Dear User, \n\nI'm so glad you asked why! \n\n$7.25 is the U.S. federal minimum wage. \n\nStarting Oct/17/2022 (the date of creation of this website), you are automatically enrolled in this program where you no longer need to worry about sleep and living costs. Just save up all your earnings and work towards your dream life! \n\n(Surely without spending any of your savings it must be easy to save up and become rich?)\n\nSincerely,\nThe Dream Team");
+    });
  
 
+//bottom progress bar
+
+var bar = setInterval(function progresscat(){ 
+    var beginning1 = new Date("Oct 17, 2022 00:00:00").getTime();
+    var paytime1 = new Date().getTime();
+    var totalhoursworked1 = Math.round((paytime1 - beginning1) / (1000*60*60));
+    var paycheck1 = Math.round(totalhoursworked1 * 7.25);
+
+    var progress1 = Math.round((paycheck1 / 25000)*100); //doesn't accept decimal places... could not figure out
+    //progress1.toFixed(10);
+// var progressbar1 = Math.round((paycheck) * (progress1));
+   // progressbar1.toFixed(10);
+// var pigprogress1 = Math.round (((paycheck) * (progress1) * 0.07));
+var pigprogress1 = Math.round ((((paycheck1 / 25000)*100 ))*0.2);
+
+   // pigprogress1.toFixed(10);
+$('.progress__fill2_2').css('width', progress1 + '%'); 
+$('.pig2').css('width', pigprogress1 + '%'); 
+$('.moneypig2').css('width', pigprogress1 + '%'); 
+console.log(pigprogress1);
+   if (progress1 >= 99){
+    clearInterval(bar);
+    $('.progress__fill2_2').css('width','100%'); 
+    $('.moneypig2').css('width', '24%'); 
+    return ;
+}
+}, 1000);
 
 
 
- //hour progress bar movement
-        var size = 0;  
-        var interval = setInterval(function(){  
-         size = size + 50;  
-         $('.progress__fill').css('width', size + '%');  
-         if(size >= 100)  
-         {  
-          clearInterval(interval); 
-         }  
+
+//add money every full hour, change background according to bank account
+setInterval(function(){ 
+        var beginning = new Date("Oct 17, 2022 00:00:00").getTime();
+        var paytime = new Date().getTime();
+        var totalhoursworked = Math.round((paytime - beginning) / (1000*60*60));
+        var paycheck = Math.round(totalhoursworked * 7.25);
+  
+        $(".label").html('$' + paycheck);
+        if (paycheck >=25000){
+            $("body").css('background-image','url("assets/cat.gif")');
+        }
+    }, 1000);
+
+
+//hover futures
+    $(".progress__fill2").mouseenter(function(){
+    $(".future1").css('opacity','1')
+    });
+
+    $(".progress__fill2").mouseleave(function(){
+    $(".future1").css('opacity','0')
+    });
+
+
+//money pig every full hour
+
+setInterval(function(){ 
+    var fullhour = new Date().getMinutes() + new Date().getSeconds;
+    if (fullhour >= 118){
+        $(".pig").addClass(".hide")
+        $(".moneypig").addClass("show")
+        $(".pig2").addClass(".hide")
+        $(".moneypig2").addClass("show")
+    } else {
+        $(".pig").removeClass(".hide")
+        $(".moneypig").removeClass("show")
+        $(".pig2").removeClass(".hide")
+        $(".moneypig2").removeClass("show")
+    }
+}, 1000);
+
+
+
+ //hour progress bar movement + pig movement
+
+        setInterval(function(){ 
+            var size = new Date().getSeconds();
+            var progressbar = Math.floor(size * (100/60));
+            var pigprogress = Math.floor (size * (100/60) * 1.5);
+       //     if (progressbar >= 100) {
+       //         progressbar = Math.floor(size * progress);
+       //     }
+           $('.progress__fill').css('width', progressbar + '%'); 
+           $('.pig').css('width', pigprogress + '%'); 
+           $('.moneypig').css('width', pigprogress + '%'); 
+
+
+        //console.log(progressbar);
         }, 1000);
 
 
+   
 //hour time bar count up synced with real time
         setInterval(function() {
             var local = new Date();
-            var localdatetime = local.getMinutes() + ":" + local.getSeconds();
+            var localdatetime = local.getHours() + ":" + local.getMinutes() + ":" + local.getSeconds();
           
             $('.progress__text').html(localdatetime);
+
           }, 1000);
 
 
@@ -38,7 +114,7 @@ $(document).ready(function(){
 
         //	var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
         //    var endTime = new Date("14 February 2029 08:16:34");	
-            var endTime = new Date("3 November 2023 00:00:00");			
+            var endTime = new Date("28 June 2102 01:00:00");			
 		
                 endTime = (Date.parse(endTime) / 1000);
     
@@ -48,10 +124,13 @@ $(document).ready(function(){
                 var timeLeft = endTime - now;
 
                 var years = Math.floor(timeLeft / (60 * 60 * 24 * 365));
-                 var days = Math.floor(timeLeft / (60 * 60 * 24) - years * 365); 
-                var hours = Math.floor((timeLeft - (days * 86400) - years * 24) / 3600 );
+                var days = Math.floor(timeLeft / (60 * 60 * 24) - years * 365); 
+                var hours = Math.floor(timeLeft / (60 * 60) - days * 24);
+               // var hours = Math.floor((timeLeft - (days * 86400) - years * 24) / 3600 );
                 var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+              //  var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
                 var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+               // var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
 
 
                 if (hours < "10") { hours = "0" + hours; }  
@@ -74,16 +153,17 @@ $(document).ready(function(){
 
 
 
-    //countdown timer!!
+//countdown timer!!
 
-    // Set the date we're counting down to
-    //var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-    var countDownDate = new Date().getTime();
+ 
 
     // Update the count down every 1 second
     
     var x = setInterval(function() {
-    
+       // Set the date we're counting down to
+    //var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+    var countDownDate = new Date().getTime();
+
       // Get today's date and time
       var start = new Date("Oct 17, 2022 00:00:00").getTime();
     //  var start = new Date().getTime();
@@ -107,6 +187,7 @@ $(document).ready(function(){
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "YOU MADE IT!";
       }
+    //   console.log(distance);
     }, 1000);
 
 
