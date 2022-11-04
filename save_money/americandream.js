@@ -1,10 +1,21 @@
 $(document).ready(function(){
 
 //overall message to user
-    $("h1").click(function(){
+    $("#titlehover").click(function(){
         alert("Dear User, \n\nI'm so glad you asked why! \n\n$7.25 is the U.S. federal minimum wage. \n\nStarting Oct/17/2022 (the date of creation of this website), you are automatically enrolled in this program where you no longer need to worry about sleep and living costs. Just save up all your earnings and work towards your dream life! \n\n(Surely without spending any of your savings it must be easy to save up and become rich?)\n\nSincerely,\nThe Dream Team");
     });
+
+    $("#titlehover").mouseenter(function(){
+        $("#titlehover").css('color','red');
+        $("#titlehover").css('font-size','4.1vw');
+
+    });
  
+    $("#titlehover").mouseleave(function(){
+        $("#titlehover").css('color','rgb(23, 87, 236)');
+        $("#titlehover").css('font-size','4vw');
+
+    });
 
 //bottom progress bar
 
