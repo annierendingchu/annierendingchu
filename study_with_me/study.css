@@ -1,0 +1,65 @@
+.girl {
+    height: 100vh;
+    width: 100vw;
+    overflow:hidden;
+    margin: -5px -5px;
+    background-image: url("assets/girl.png");
+    background-size: cover;
+
+}
+
+body {
+    background-image: url("assets/backgrounds/1.png");
+    background-size: cover;
+
+}
+
+.top {
+    height: 10vh;
+    width: 105%;
+    left:-5px;
+    top:-5px;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: fixed;
+    opacity: 0;
+}
+
+.top:hover {
+    opacity: 1;
+}
+
+.title {
+    position:fixed;
+    font-family: 'Silkscreen', cursive;
+    font-size: 5vh;
+    text-align: center;
+    transform: translateY(5vh);
+    background-color: antiquewhite;
+    width: 100%;
+    justify-content: center;
+
+}
+.setting {
+    font-family: 'Silkscreen', cursive;
+    font-size:x-large;
+    color: aliceblue;
+    width: 20vw;
+    display: flex;
+    float:left;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.time{
+    bottom:0;
+    position:fixed;
+    z-index: 1;
+}
+
+#welcome{
+    font-family: 'Silkscreen', cursive;
+    color: aliceblue;
+    font-size:10vh;
+    margin: auto;
+
+}
