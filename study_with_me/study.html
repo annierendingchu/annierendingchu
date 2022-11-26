@@ -14,18 +14,37 @@
   </head>
   <body>
     <div class="top">
-        <p class="setting" id="background">background</p>
-        <p class="setting">music</p>
-        <p class="setting">study time</p>
-        <p class="setting">break frequency</p>
-        <p class="setting">break time</p>
+        <p class="setting" id="background"> change background</p>
+        <p class="setting" id="music">select music</p>
+        <div  class="smallform">
+          <form>
+            <p class="timesetting" id="study">study session setting </p>
+            <p class="timesetting2">study time: 
+                <input id="hour" value="00" maxlength ="2"></input>hr
+                <input id="minute" value="00" maxlength ="2"></input>min
+                <input id="second" value="00" maxlength ="2"></input>sec
+            </p>
+            <p class="timesetting2">break time: 
+                <input id="breakhour" value="00" maxlength ="2"></input>min
+                <input id="breakminute" value="00" maxlength ="2"></input>sec
+            </p>
+            <p class="timesetting2">break frequency: 
+                <input id="breakfreq" value="00" maxlength ="2"></input>
+            </p>
+            <input type="reset" value="Clear form" />
+          </form>
+        </div>
+        
+        <div class="startbutton">
+          <p class="start"> Start</p>
+        </div>
         <p class="title">Study with Lo-Res Girl</p>
     </div>
+    
     <div class="time">
         <p id="welcome">welcome :)</p>
     </div>
-    <div class="girl">
-    </div>
+    <div class="girl"></div>
 
   </body>
 </html>
