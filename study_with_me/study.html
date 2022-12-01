@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Puddles&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="study.js"></script>
+    
   </head>
   <body>
     <div class="top">
@@ -20,16 +21,19 @@
           <form>
             <p class="timesetting" id="study">study session setting </p>
             <p class="timesetting2">study time: 
-                <input id="hour" value="00" maxlength ="2"></input>hr
-                <input id="minute" value="00" maxlength ="2"></input>min
-                <input id="second" value="00" maxlength ="2"></input>sec
+                <input id="hour" placeholder="00" maxlength ="2">hr
+                <input id="minute" placeholder="00" maxlength ="2">min
+                <input id="second" placeholder="00" maxlength ="2">sec
             </p>
             <p class="timesetting2">break time: 
-                <input id="breakhour" value="00" maxlength ="2"></input>min
-                <input id="breakminute" value="00" maxlength ="2"></input>sec
+                <input id="breakhour" placeholder="00" maxlength ="2">min
+                <input id="breakminute" placeholder="00" maxlength ="2">sec
             </p>
             <p class="timesetting2">break frequency: 
-                <input id="breakfreq" value="00" maxlength ="2"></input>
+              <input id="breakfreq" placeholder="00" maxlength="2">
+                <!-- <select id="breakfreq">
+                  <option value="1">1</option>
+                </select> -->
             </p>
             <input type="reset" value="Clear form" />
           </form>

@@ -1,19 +1,94 @@
 $(document).ready(function(){
 
-    // Change background image 
-    //$("#background").click(function() {
-     //   var imageUrl = ['a','b','c' ];
-        // "assets/backgrounds/2.png";
+//countdown timer
+  //click start to trigger
+  $(".startbutton").click(function(){
 
-        //detect the class value of clicked element
-       
+  //   function makeTimer() {
 
-        //pull nth item from the array that matchs with the number of ^element  
-      //  console.log(imageUrl[0]);
+  //   var hour = $("input#hour").val();
+  //   var minute = $("input#minute").val();
+  //   var second = $("input#second").val();
+  //   hour = parseInt(hour) ||0;
+  //   minute = parseInt(minute) ||0;
+  //   second = parseInt(second) ||0;
 
-     //   $("body").css("background-image", "url(" + imageUrl[0] + ")");
-    //});
+  //   var h1 = new Date().getHours() + hour;
+  //   var m1 = new Date().getMinutes() + minute;
+  //   var s1 = new Date().getSeconds() + second;
+  //   var h2 = new Date().getHours();
+  //   var m2 = new Date().getMinutes();
+  //   var s2 = new Date().getSeconds();
 
+  //   var x = new Date().setHours(h1,m1,s1);
+  //     x = Date.parse(x);
+  //   var y = new Date().setHours(h2,m2,s2);
+  //     y = Date.parse(y);
+
+  //   var timespan = x - y
+
+  //   var timerhour = Math.floor(timespan/ (60 * 60 * 1000));
+  //   var timerminute = Math.floor(timespan/ (60 * 1000) - (hour * 60 ));
+  //   var timersecond = Math.floor(timespan/ (1000) - (minute * 60) - (hour * 60 * 60));
+
+  //   var currenttimer = timerhour + ":" + timerminute + ":" + timersecond;
+
+
+  //   $('#welcome').html(u);
+
+  // }
+  // setInterval(function() { makeTimer(); }, 1000);
+
+ // ---------------------------------------------------------
+
+//   // Set the date we're counting down to
+ 
+
+// var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  var hour = $("input#hour").val();
+var minute = $("input#minute").val();
+var second = $("input#second").val();
+hour = parseInt(hour) ||0;
+minute = parseInt(minute) ||0;
+second = parseInt(second) ||0;
+
+  const u = new Date();
+  u.setHours(u.getHours()+hour);
+  u.setMinutes(u.getMinutes()+minute);
+  u.setSeconds(u.getSeconds()+second);
+  var uu = u.getTime();
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = uu - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("welcome").innerHTML =  hours + "h " + minutes + "m " + seconds + "s ";
+      // $('#welcome').html(u);
+
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("welcome").innerHTML = "no timer";
+  }
+}, 1000);
+
+})
+
+
+//background change!
     var change = $("body");
     var counter = 0;
     var myPictures = [
@@ -36,6 +111,8 @@ $(document).ready(function(){
     // Load the first image
     counter -= 1; // Do this so it starts at the first, not the second
     nextPic();
+
+
 
 
 //countdown display

@@ -98,7 +98,7 @@ body {
 .start {
     font-size:xx-large;
     padding:10px;
-    border-radius:10px;
+    border-radius:20px;
     background-color:lightblue;
     text-shadow:2px 2px darkblue;
     margin-bottom:0;
@@ -106,7 +106,6 @@ body {
 
 .start:hover {
     padding:10px;
-    border-radius:10px;
     background-color:darkblue;
     text-shadow:2px 2px darkblue;
 }
