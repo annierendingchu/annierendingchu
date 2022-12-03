@@ -5,7 +5,7 @@
     margin: -5px -5px;
     background-image: url("assets/girl.png");
     background-size: cover;
-
+    background-position: center;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
 }
 
 .top {
+    /* for the top bar
     width: 105%;
     left:-5px;
     top:-5px;
@@ -21,29 +22,47 @@ body {
     background-color:rgba(0, 0, 0, 0.5);
     position: fixed;
     opacity: 1;
+    z-index:1000; */
+    width: 40%;
+    display: flex;
+    position: fixed;
+    top:30vh;
+    margin-left: 30vw;
+    margin-right: 30vw;
     z-index:1000;
+    background-color:rgb(0, 0, 0);
+    padding-bottom: 20px;
+    border-radius: 40px;
+    
 }
 
 .top:hover {
     opacity: 1;
 }
 
+.bottom {
+    position: fixed;
+    right:0;
+    bottom:0;
+    height: 7vh;
+}
+
 .title {
-    position:fixed;
+    margin: 0;
     font-family: 'Silkscreen', cursive;
     font-size: 5vh;
     text-align: center;
-    color: orange;
+    color: rgb(150, 228, 158);
     width: 100%;
     justify-content: center;
-    text-shadow:2px 2px #ff0000
+    text-shadow:2px 2px #003cff
 
 }
 .setting {
     font-family: 'Silkscreen', cursive;
     font-size:x-large;
     color: aliceblue;
-    width: 25vw;
+    width: 30vw;
     display: flex;
     float:left;
     justify-content: center;
@@ -54,19 +73,19 @@ body {
 
 .smallform {
     display: flex;
-    float:left;
     cursor: pointer;
+    justify-content: center;
     text-align: center;
+    width: 100%;
 }
 
 .timesetting {
     font-family: 'Silkscreen', cursive;
     font-size:x-large;
-    color: aliceblue;
-    width: 25vw;
-
+    color: rgb(255, 255, 255);
+    width: 40vw;
     display: flex;
-    margin-bottom:0;
+    margin-bottom:15px;
     justify-content: center;
     cursor: pointer;
     text-align: center;
@@ -75,13 +94,14 @@ body {
 .timesetting2 {
     font-family: 'Silkscreen', cursive;
     font-size:large;
-    color: black;
+    color: rgb(205, 205, 205);
     margin:0;
     cursor: pointer;
     text-align: center;
+    width: 40vw;
 }
 
-.startbutton {
+/* .startbutton {
     font-family: 'Silkscreen', cursive;
     color: aliceblue;
     margin-top:20px;
@@ -92,8 +112,22 @@ body {
     margin-bottom:0;
     width: 25vw;
 
+} */
+input.startbutton {
+    width:30px;
+    cursor: pointer;
+    background-color: #e2e2e2;
 
 }
+input.startbutton:hover {
+   background-color: rgb(150, 228, 158);
+}
+
+input.resetbutton {
+    width:80px;
+    cursor: pointer;
+}
+
 
 .start {
     font-size:xx-large;
@@ -112,7 +146,7 @@ body {
 
 
 input#hour {
-    width:15px;
+    width:22px;
 }
 
 input#minute {
@@ -137,13 +171,13 @@ input#breakfreq {
 
 #background:hover {
 color:yellow;
-font-size:xx-large;
+/* font-size:xx-large; */
 text-shadow:2px 2px #ff0000;
 }
 
 #music:hover {
     color:lightgreen;
-    font-size:xx-large;
+    /* font-size:xx-large; */
     text-shadow:2px 2px darkgreen;
     }
     
@@ -165,6 +199,12 @@ text-shadow:2px 2px #ff0000;
     font-size:10vh;
     margin: auto;
     text-shadow:3px 3px blue;
+}
+
+#welcome:hover {
+    color:blue;
+    text-shadow:2px 2px #ff0000;
+    cursor: pointer;
 }
 
 
