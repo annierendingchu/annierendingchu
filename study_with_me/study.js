@@ -172,6 +172,7 @@ $("#music2").click(function(){
     var change = $("body");
     var counter = 0;
     var myPictures = [
+      "assets/backgrounds/10.gif",
       "assets/backgrounds/2.gif",
       "assets/backgrounds/3.gif",
       "assets/backgrounds/4.gif",
@@ -181,8 +182,16 @@ $("#music2").click(function(){
       "assets/backgrounds/7.gif",
       "assets/backgrounds/8.gif",
       "assets/backgrounds/9.gif",
-      "assets/backgrounds/10.gif",
       "assets/backgrounds/11.gif",
+      "assets/backgrounds/12.gif",
+      "assets/backgrounds/13.gif",
+      "assets/backgrounds/15.gif",
+      "assets/backgrounds/16.gif",
+      "assets/backgrounds/17.gif",
+      "assets/backgrounds/18.gif",
+      "assets/backgrounds/14.gif",
+      "assets/backgrounds/19.gif",
+      "assets/backgrounds/20.gif",
 
         "assets/backgrounds/1.png",
         "assets/backgrounds/2.png",
