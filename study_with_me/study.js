@@ -5,6 +5,7 @@ $(document).ready(function(){
 
     $("#welcome").click(function (){
       $(".top").show();
+      
     })
  
     $("#x").click(function (){
@@ -65,6 +66,7 @@ var countdownclock = setInterval(function countdown(){
       hour = 0;
       minute = 0;
       second = 0;
+      $("#alarm")[0].play();
     // document.getElementById("welcome").innerHTML = "no timer";
   }
 
@@ -140,11 +142,22 @@ $(".resetbutton").click(function (){
 //music playlist!!
 $("#music2").hide();
 
+var x = 0;
+var music = document.getElementById("song");
+
+
 $("#music").click(function(){
   $("#song")[0].play();
   $("#music2").css("color" , "lightgreen");
   $("#music").hide();
   $("#music2").show();
+  
+  music.addEventListener('ended', function(){
+    x=x+1;
+    music.src = "assets/music/" + x%4 + ".mp3";
+    music.load();
+    music.play();       
+    })
 })
 
 $("#music2").click(function(){
@@ -155,16 +168,24 @@ $("#music2").click(function(){
 })
 
 
-
 //background change!
     var change = $("body");
     var counter = 0;
     var myPictures = [
       "assets/backgrounds/2.gif",
+      "assets/backgrounds/3.gif",
+      "assets/backgrounds/4.gif",
       "assets/backgrounds/1.gif",
+      "assets/backgrounds/5.gif",
+      "assets/backgrounds/6.gif",
+      "assets/backgrounds/7.gif",
+      "assets/backgrounds/8.gif",
+      "assets/backgrounds/9.gif",
+      "assets/backgrounds/10.gif",
+      "assets/backgrounds/11.gif",
+
         "assets/backgrounds/1.png",
         "assets/backgrounds/2.png",
-        "assets/backgrounds/3.png",
     ];
     
     // Here's how you can hookup the click event

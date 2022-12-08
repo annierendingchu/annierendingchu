@@ -11,6 +11,10 @@
 body {
     background-size: cover;
     background-color: black;
+    background-position: top;
+    background-size:90vw;
+    background-repeat: no-repeat;
+
 }
 
 .top {
