@@ -31,7 +31,7 @@
             <!-- <p class="timesetting2">break frequency: 
               <input id="breakfreq" placeholder="00" maxlength="2">
             </p> -->
-            <input class="resetbutton" type="reset" value="Refresh" />
+            <input class="resetbutton" type="reset" value="Reset" />
             <input class="startbutton" value="Start" readonly>
           </form>
 
@@ -59,11 +59,16 @@
     </div>
     <div class="bottom">
       <div class="setting" id="background"> change background</div>
-      <div class="setting" id="music">music
-        <audio id="music" loops type="audio/mp3">
+      <div class="setting" class="on" id="music">music: off
+        <audio id="song" src="assets/music/2.mp3" loops autoplay type="audio/mp3">
           <source src="">
         </audio>
       </div>
+      <div class="setting" id="music2">music: on
+      <audio id="song" src="assets/music/2.mp3" loops autoplay type="audio/mp3">
+        <source src="">
+      </audio>
+    </div>
     </div>
     
     <div class="time">

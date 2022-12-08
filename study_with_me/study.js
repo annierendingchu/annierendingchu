@@ -13,11 +13,6 @@ $(document).ready(function(){
  
 
 
-//click clear form to refresh page
-$(".resetbutton").click(function (){
-location.reload();
-})
-
 //select time
 $(function(){
   var $select = $("#minute");
@@ -87,7 +82,25 @@ var countdownclock = setInterval(function countdown(){
 
     document.getElementById("welcome").innerHTML = hour + ":" + minute + ":" + second;
 
+
+$(".startbutton").hide();
+    //click clear form to refresh page
+$(".resetbutton").click(function (){
+  // location.reload();
+  clearInterval(countdownclock);
+  $(".startbutton").show();
+
+  hour = 0;
+  minute = 0;
+  second = 0;
+  document.getElementById("welcome").innerHTML = "welcome :)";
+
+  })
+
 },1000);
+
+
+
 
 //break timer!!!
 
@@ -125,10 +138,23 @@ var countdownclock = setInterval(function countdown(){
 
 
 //music playlist!!
+$("#music2").hide();
+
 $("#music").click(function(){
-  $("#youtube").find(iframe).trigger("click");
-  // $("#music").css("background-color","black");
+  $("#song")[0].play();
+  $("#music2").css("color" , "lightgreen");
+  $("#music").hide();
+  $("#music2").show();
 })
+
+$("#music2").click(function(){
+  $("#song")[0].pause();
+  $("#music2").css("color" , "white");
+  $("#music2").hide();
+  $("#music").show();
+})
+
+
 
 //background change!
     var change = $("body");

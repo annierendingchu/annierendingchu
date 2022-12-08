@@ -10,7 +10,7 @@
 
 body {
     background-size: cover;
-
+    background-color: black;
 }
 
 .top {
@@ -61,7 +61,7 @@ body {
     font-family: 'Silkscreen', cursive;
     font-size:x-large;
     color: rgb(255, 255, 255);
-    width: 30vw;
+    width: 25vw;
     display: flex;
     float:left;
     justify-content: center;
@@ -71,9 +71,6 @@ body {
 
 }
 
-#youtube {
-    position:fixed;
-}
 
 .smallform {
     display: flex;
@@ -130,7 +127,7 @@ input.startbutton:hover {
 }
 
 input.resetbutton {
-    width:80px;
+    width:60px;
     cursor: pointer;
 }
 
@@ -186,6 +183,19 @@ text-shadow:2px 2px #ff0000;
     /* font-size:xx-large; */
     text-shadow:2px 2px darkgreen;
     }
+
+
+#music2:hover {
+    color:lightgreen;
+    /* font-size:xx-large; */
+    text-shadow:2px 2px darkgreen;
+    }
+
+#music.on{
+    color:lightgreen;
+    /* font-size:xx-large; */
+    text-shadow:2px 2px darkgreen;
+}
     
  #study:hover {
         color:blue;
@@ -197,6 +207,7 @@ text-shadow:2px 2px #ff0000;
     bottom:0;
     position:fixed;
     z-index: 1;
+    width: 50%;
 }
 
 #welcome{
