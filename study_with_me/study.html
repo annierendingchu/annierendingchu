@@ -18,20 +18,20 @@
         <div  class="smallform">
           <form>
             <p class="timesetting" id="study">study session setting </p>
+            <div  id="x">X</div>
             <p class="timesetting2">study time: 
                 <input id="hour" placeholder="000" maxlength ="3">hr
                 <select id="minute"></select>min
                 <select id="second"></select>sec
             </p>
-            <p class="timesetting2"> *short breaks every 25 minutes <br> long breaks every 1.5 hours*
-                <!-- break time:
-                <select id="breakminute"></select>min
-                <select id="breaksecond"></select>sec -->
+            <p class="timesetting2"> *5min breaks every 25 minutes* <br>
+                <!-- <select id="breakminute"></select>min
+                <select id="breaksecond"></select>sec --> 
             </p>
             <!-- <p class="timesetting2">break frequency: 
               <input id="breakfreq" placeholder="00" maxlength="2">
             </p> -->
-            <input class="resetbutton" type="reset" value="Clear form" />
+            <input class="resetbutton" type="reset" value="Refresh" />
             <input class="startbutton" value="Start" readonly>
           </form>
 
@@ -58,13 +58,15 @@
         </div> -->
     </div>
     <div class="bottom">
-      <p class="setting" id="background"> change background</p>
-      <p class="setting" id="music">music</p>
+      <div class="setting" id="background"> change background</div>
+      <div class="setting" id="music">music
+        <audio id="youtube" controls loops src="https://www.youtube.com/embed/jfKfPfyJRdk" type="audio/mp3"></audio>
+      </div>
     </div>
     
     <div class="time">
       <!-- <p class="title">Study with Lo-Res Girl</p> -->
-      <p id="welcome">welcome :)</p>
+      <div id="welcome">welcome :)</div>
     </div>
     <div class="girl"></div>
 
