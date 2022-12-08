@@ -71,6 +71,9 @@ body {
 
 }
 
+#youtube {
+    position:fixed;
+}
 
 .smallform {
     display: flex;

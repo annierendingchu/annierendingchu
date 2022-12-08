@@ -124,6 +124,12 @@ var countdownclock = setInterval(function countdown(){
 })
 
 
+//music playlist!!
+$("#music").click(function(){
+  $("#youtube").find(iframe).trigger("click");
+  // $("#music").css("background-color","black");
+})
+
 //background change!
     var change = $("body");
     var counter = 0;
