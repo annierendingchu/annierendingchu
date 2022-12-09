@@ -160,43 +160,43 @@ setInterval(function(){
 
 
 //countdown to-go timer
-    function makeTimer() {
+    // function makeTimer() {
 
-        //	var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
-        //    var endTime = new Date("14 February 2029 08:16:34");	
-            var endTime = new Date("28 June 2102 01:00:00");			
+    //     //	var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
+    //     //    var endTime = new Date("14 February 2029 08:16:34");	
+    //         var endTime = new Date("28 June 2102 01:00:00");			
 		
-                endTime = (Date.parse(endTime) / 1000);
+    //             endTime = (Date.parse(endTime) / 1000);
     
-                var now = new Date();
-                now = (Date.parse(now) / 1000);
+    //             var now = new Date();
+    //             now = (Date.parse(now) / 1000);
     
-                var timeLeft = endTime - now;
+    //             var timeLeft = endTime - now;
 
-                var years = Math.floor(timeLeft / (60 * 60 * 24 * 365));
-                var days = Math.floor(timeLeft / (60 * 60 * 24) - years * 365); 
-                var hours = Math.floor(timeLeft / (60 * 60) - days * 24);
-               // var hours = Math.floor((timeLeft - (days * 86400) - years * 24) / 3600 );
-                var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
-              //  var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
-                var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-               // var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+    //             var years = Math.floor(timeLeft / (60 * 60 * 24 * 365));
+    //             var days = Math.floor(timeLeft / (60 * 60 * 24) - years * 365); 
+    //             var hours = Math.floor(timeLeft / (60 * 60) - days * 24);
+    //            // var hours = Math.floor((timeLeft - (days * 86400) - years * 24) / 3600 );
+    //             var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+    //           //  var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+    //             var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+    //            // var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
 
 
-                if (hours < "10") { hours = "0" + hours; }  
-                if (minutes < "10") { minutes = "0" + minutes; }
-                if (seconds < "10") { seconds = "0" + seconds; }
+    //             if (hours < "10") { hours = "0" + hours; }  
+    //             if (minutes < "10") { minutes = "0" + minutes; }
+    //             if (seconds < "10") { seconds = "0" + seconds; }
     
-               document.getElementById("togo").innerHTML = years + "y " + days + "d " + hours + "h "
-              + minutes + "m " + seconds + "s " + "<br> to go";
+    //            document.getElementById("togo").innerHTML = years + "y " + days + "d " + hours + "h "
+    //           + minutes + "m " + seconds + "s " + "<br> to go";
 
-            //    $("#days").html(days + "<span>D</span>");
-              //  $("#hours").html(hours + "<span>H</span>");
-                //$("#minutes").html(minutes + "<span>M</span>");
-                //$("#seconds").html(seconds + "<span>S</span>");		
+    //         //    $("#days").html(days + "<span>D</span>");
+    //           //  $("#hours").html(hours + "<span>H</span>");
+    //             //$("#minutes").html(minutes + "<span>M</span>");
+    //             //$("#seconds").html(seconds + "<span>S</span>");		
     
-        }
-        setInterval(function() { makeTimer(); }, 1000);
+    //     }
+    //     setInterval(function() { makeTimer(); }, 1000);
 
 
 
