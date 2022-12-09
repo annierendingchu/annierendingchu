@@ -354,6 +354,16 @@ margin-top:-5vh;
     pointer-events: none;
 }
 
+.future2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(7.3)translate(0vh,-5vh);
+    opacity: 0;
+    pointer-events: none;
+}
+
+
 .futuretext {
     font-size: 10%;
     position:fixed;

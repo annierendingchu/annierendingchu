@@ -233,7 +233,7 @@ setInterval(function(){
       + minutes + "m " + seconds + "s ";
     
       // If the count down is finished, write some text
-      if (distance > 3326897000) {
+      if (distance > 33268970000) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "YOU MADE IT!";
       }
